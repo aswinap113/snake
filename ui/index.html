@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Snake</title>
+<link href="./style.css" rel="stylesheet">
+<script src="./script.js" defer></script>
+</head>
+<body>
+<main class="shell">
+  <h1>Snake</h1>
+  <form id="setup" class="controls" novalidate>
+    <label>Height<input id="h" type="number" value="15" inputmode="numeric"></label>
+    <label>Width<input id="w" type="number" value="15" inputmode="numeric"></label>
+    <button id="start" type="submit">Start</button>
+  </form>
+  <p id="err" class="err" role="alert"></p>
+  <section class="device">
+    <div class="bar"><span id="score">Score 1</span><span id="state">Ready</span></div>
+    <div class="stage" id="stage"><canvas id="cv" role="img"></canvas><div id="msg" class="msg"></div></div>
+  </section>
+</main>
+</body>
+</html>
